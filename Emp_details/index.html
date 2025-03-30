@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <style>
+        body {
+            font-size: 18px;
+            background: url('https://source.unsplash.com/random/1920x1080?nature') no-repeat center center/cover;
+            
+            color: white;
+        }
+        form {
+            width: 80%;
+            max-width: 900px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+        </style>
+        
+    <h2>Employee Details</h2>
+    <form id="employeeForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" name="designation" required>
+
+        <label for="mandal">Name of Mandal:</label>
+        <input type="text" id="mandal" name="mandal" required>
+
+        <label for="opening_balance">Opening Balance:</label>
+        <input type="number" id="opening_balance" name="opening_balance" required>
+
+        <fieldset>
+            <legend>Subscription (April - March)</legend>
+            <input type="number" name="subscription_april" placeholder="April">
+            <input type="number" name="subscription_may" placeholder="May">
+            <input type="number" name="subscription_june" placeholder="June">
+            <input type="number" name="subscription_july" placeholder="July">
+            <input type="number" name="subscription_august" placeholder="August">
+            <input type="number" name="subscription_september" placeholder="September">
+            <input type="number" name="subscription_october" placeholder="October">
+            <input type="number" name="subscription_november" placeholder="November">
+            <input type="number" name="subscription_december" placeholder="December">
+            <input type="number" name="subscription_january" placeholder="January">
+            <input type="number" name="subscription_february" placeholder="February">
+            <input type="number" name="subscription_march" placeholder="March">
+        </fieldset>
+
+        <fieldset>
+            <legend>Reductions (April - March)</legend>
+            <input type="number" name="reductions_april" placeholder="April">
+            <input type="number" name="reductions_may" placeholder="May">
+            <input type="number" name="reductions_june" placeholder="June">
+            <input type="number" name="reductions_july" placeholder="July">
+            <input type="number" name="reductions_august" placeholder="August">
+            <input type="number" name="reductions_september" placeholder="September">
+            <input type="number" name="reductions_october" placeholder="October">
+            <input type="number" name="reductions_november" placeholder="November">
+            <input type="number" name="reductions_december" placeholder="December">
+            <input type="number" name="reductions_january" placeholder="January">
+            <input type="number" name="reductions_february" placeholder="February">
+            <input type="number" name="reductions_march" placeholder="March">
+        </fieldset>
+
+        <label for="closing_balance">Closing Balance:</label>
+        <input type="number" id="closing_balance" name="closing_balance" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
